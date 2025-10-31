@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between; /* logo left, notifications right */
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 25px;
 }
 
 .logo h1 {
