@@ -1,0 +1,212 @@
+.navbar {
+  display: flex;
+  justify-content: space-between; /* logo left, notifications right */
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+.logo-menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.menu-toggle {
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Dropdown hidden by default */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 30px;       /* below the toggle */
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  flex-direction: column;
+  width: 120px;
+  z-index: 10;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+/* Style links */
+.dropdown-menu a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  transition:  0.2s;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+
+/* Keep your notification icons as is */
+.notification {
+  display: flex;
+  gap: 10px;
+}
+.notification i {
+  font-size: 22px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.notification i:hover {
+  color: #f5ecef;
+  background-color: #ff004f;
+}
+
+
+/* Stories row already works horizontally */
+.stories {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px 20px;
+  margin: 0;
+  scrollbar-width: none;
+}
+
+.stories::-webkit-scrollbar {
+  display: none;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  gap: 5px;
+  flex-shrink: 0;
+}
+
+.story img {
+  width: 70px; /* slightly bigger than icons */
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid #ff004f;
+  padding: 2px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.story img:hover {
+  transform: scale(1.1);
+}
+
+.story p {
+  font-size: 12px;
+  margin: 0;
+  text-align: center;
+}
+.seen{
+    float: left;
+    padding-left: 20px;
+}
+
+.personposts {
+  display: flex;
+  flex-direction: column; /* stack posts vertically */
+  align-items: center;    /* center posts horizontally */
+  gap: 40px;              /* space between posts */
+  margin: 40px auto;
+  max-width: 500px;       /* control total width */
+  font-family: 'Poppins', sans-serif;
+}
+
+.personpost {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* Header section: profile + name */
+.post-calander {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.post-calander img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ff004f;
+  object-fit: cover;
+}
+
+.username {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Post image */
+.personpost img.postimage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.personpost img.postimage:hover {
+  transform: scale(1.03);
+}
+
+/* Username under or beside image */
+.personpost p {
+  font-size: 14px;
+  color: #333;
+  margin: 5px 10px;
+  text-align: left;
+}
+.personpost i {
+  color: #333;
+  font-size: 25px;
+  cursor: pointer;
+  padding:15px;
+}
+.personpost i:hover{
+    background-color: #ff004f;
+    color:#f5ecef;
+}
+.bottom-nav i{
+    margin:10px;
+    margin-left: 20px;
+    padding:10px;
+    cursor:pointer;
+    transform: tran;
+}
+.bottom-nav i:hover {
+  transform: translateY(-5px);   /* move icon up slightly */
+  transition: transform 0.3s ease;
+  color: #ff004f;                /* optional color change */
+}
+
+
+
+
