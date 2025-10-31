@@ -105,7 +105,7 @@
   width: 70px; /* slightly bigger than icons */
   height: 70px;
   border-radius: 50%;
-  border: 3px solid #ff004f;
+  border: 3px double #ff004f;
   padding: 2px;
   object-fit: cover;
   transition: transform 0.3s;
@@ -195,7 +195,7 @@
     color:#f5ecef;
 }
 .bottom-nav i{
-    margin:10px;
+    margin:11px;
     margin-left: 20px;
     padding:10px;
     cursor:pointer;
